@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Japan",
-      "imageUrl": "https://images.unsplash.com/photo-1493976040375-85c17124295e?q=80&w=2070&auto=format&fit=crop", 
+      "imageUrl": "https://images.unsplash.com/photo-1493976040375-85c17124295e?auto=format&fit=crop&w=1000&q=80", 
       "description": "Experience the vibrant culture and ancient traditions of Japan, from Tokyo's neon lights to Kyoto's serene temples.",
       "cities": [
         {
           "name": "Tokyo",
-          "imageUrl": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1974&auto=format&fit=crop",
+          "imageUrl": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1000&q=80",
           "description": "A bustling metropolis blending ultra-modern and traditional."
         },
         {
           "name": "Kyoto",
-          "imageUrl": "https://images.unsplash.com/photo-1493976040375-85c17124295e?q=80&w=2070&auto=format&fit=crop",
+          "imageUrl": "https://images.unsplash.com/photo-1493976040375-85c17124295e?auto=format&fit=crop&w=1000&q=80",
           "description": "Famous for its classical Buddhist temples, gardens, and imperial palaces."
         }
       ]
@@ -21,17 +21,17 @@
     {
       "id": 2,
       "name": "Australia",
-      "imageUrl": "https://images.unsplash.com/photo-1523482580672-01e6f06399c1?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1523482580672-01e6f06399c1?auto=format&fit=crop&w=1000&q=80",
       "description": "Explore the diverse landscapes of Australia, from the Great Barrier Reef to the Outback.",
       "cities": [
         {
             "name": "Sydney",
-            "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=2070&auto=format&fit=crop",
+            "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=80",
             "description": "Known for its Sydney Opera House, Harbour Bridge, and beaches."
         },
         {
             "name": "Melbourne",
-            "imageUrl": "https://images.unsplash.com/photo-1514395462725-fb4566216140?q=80&w=2070&auto=format&fit=crop",
+            "imageUrl": "https://images.unsplash.com/photo-1514395462725-fb4566216140?auto=format&fit=crop&w=1000&q=80",
             "description": "Famous for its arts, culture, and coffee scene."
         }
       ]
@@ -39,17 +39,17 @@
     {
         "id": 3,
         "name": "Brazil",
-        "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=2076&auto=format&fit=crop",
+        "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1000&q=80",
         "description": "A country of rhythm, color, and natural wonders like the Amazon and Rio.",
         "cities": [
             {
                 "name": "Rio de Janeiro",
-                "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=2076&auto=format&fit=crop",
+                "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1000&q=80",
                 "description": "Home to Christ the Redeemer and the world-famous Carnival."
             },
             {
                 "name": "Sao Paulo",
-                "imageUrl": "https://images.unsplash.com/photo-1543059152-42b3aee10475?q=80&w=2070&auto=format&fit=crop",
+                "imageUrl": "https://images.unsplash.com/photo-1543059152-42b3aee10475?auto=format&fit=crop&w=1000&q=80",
                 "description": "A massive concrete jungle with vibrant art and culinary scenes."
             }
         ]
@@ -59,25 +59,25 @@
     {
       "id": 1,
       "name": "Angkor Wat, Cambodia",
-      "imageUrl": "https://images.unsplash.com/photo-1600100397608-f0907409f984?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1000&q=80",
       "description": "A massive temple complex and the largest religious monument in the world."
     },
     {
       "id": 2,
       "name": "Taj Mahal, India",
-      "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=2071&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=80",
       "description": "An ivory-white marble mausoleum on the right bank of the river Yamuna."
     },
     {
         "id": 3,
         "name": "Wat Phra Kaew, Thailand",
-        "imageUrl": "https://images.unsplash.com/photo-1528181304800-2f140819898c?q=80&w=2070&auto=format&fit=crop",
+        "imageUrl": "https://images.unsplash.com/photo-1528181304800-2f140819898c?auto=format&fit=crop&w=1000&q=80",
         "description": "The most sacred Buddhist temple in Thailand, home to the Emerald Buddha."
     },
     {
         "id": 4,
         "name": "Kinkaku-ji, Japan",
-        "imageUrl": "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?q=80&w=2070&auto=format&fit=crop",
+        "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1000&q=80",
         "description": "The Golden Pavilion, a Zen Buddhist temple whose top two floors are covered in leaf gold."
     }
   ],
@@ -85,25 +85,25 @@
     {
       "id": 1,
       "name": "Bora Bora, French Polynesia",
-      "imageUrl": "https://images.unsplash.com/photo-1532408840957-031d8034aeef?q=80&w=2064&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1532408840957-031d8034aeef?auto=format&fit=crop&w=1000&q=80",
       "description": "Famous for its turquoise waters and luxurious overwater bungalows."
     },
     {
       "id": 2,
       "name": "Copacabana, Brazil",
-      "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=2076&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=80",
       "description": "A world-famous crescent-shaped beach in the heart of Rio de Janeiro."
     },
     {
         "id": 3,
         "name": "Maldives",
-        "imageUrl": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2065&auto=format&fit=crop",
+        "imageUrl": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80",
         "description": "Crystal clear waters and vibrant marine life in a tropical paradise."
     },
     {
         "id": 4,
         "name": "Maya Bay, Thailand",
-        "imageUrl": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2039&auto=format&fit=crop",
+        "imageUrl": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&q=80",
         "description": "An iconic bay with towering cliffs and stunning white sands."
     }
   ]

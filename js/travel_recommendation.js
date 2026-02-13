@@ -8,9 +8,14 @@ const resultsHeader = document.getElementById('resultsHeader');
 // Load popular destinations on start
 window.addEventListener('load', () => {
     fetch('travel_recommendation_api.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
-            // Pick a few random ones from different categories for "Popular"
+            console.log('API Data loaded successfully:', data);
             const popular = [
                 data.beaches[0],
                 data.temples[1],
@@ -18,6 +23,9 @@ window.addEventListener('load', () => {
                 data.beaches[2]
             ];
             displayRecommendations(popular, popularContainer);
+        })
+        .catch(err => {
+            console.error('Initial load failed:', err);
         });
 });
 
@@ -42,15 +50,12 @@ function searchRecommendations() {
             } else if (input.includes('temple')) {
                 results = data.temples;
             } else if (input.includes('country') || input.includes('countries')) {
-                // If user searches 'country', show cities from the first country in the list
                 results = data.countries[0].cities;
             } else {
-                // Search for specific country name
                 const country = data.countries.find(item => item.name.toLowerCase().includes(input));
                 if (country) {
                     results = country.cities;
                 } else {
-                    // Fallback search in all categories
                     const beach = data.beaches.find(item => item.name.toLowerCase().includes(input));
                     if(beach) results.push(beach);
                     
@@ -60,7 +65,6 @@ function searchRecommendations() {
             }
             
             displayRecommendations(results, recommendationsContainer);
-            // Scroll to results
             recommendationsContainer.scrollIntoView({ behavior: 'smooth' });
         })
         .catch(error => {
@@ -79,15 +83,30 @@ function displayRecommendations(results, container) {
     results.forEach((item, index) => {
         const recommendationDiv = document.createElement('div');
         recommendationDiv.classList.add('recommendation-card');
-        // Add staggered animation
         recommendationDiv.style.animationDelay = `${index * 0.1}s`;
 
         const imgContainer = document.createElement('div');
         imgContainer.classList.add('card-img-container');
 
         const img = document.createElement('img');
-        img.src = item.imageUrl;
+        
+        // Use a small delay to ensure DOM is ready and force a fresh load
+        setTimeout(() => {
+            img.src = `${item.imageUrl}&t=${new Date().getTime()}`;
+        }, 0);
+        
         img.alt = item.name;
+        
+        img.onload = function() {
+            console.log(`Successfully loaded image for ${item.name}`);
+        };
+
+        img.onerror = function() {
+            console.warn(`Failed to load image for ${item.name}, using fallback.`);
+            this.src = `https://images.unsplash.com/photo-1500835597467-f519a7b91ee3?q=80&w=1000&auto=format&fit=crop`; 
+            this.onerror = null; 
+        };
+
         imgContainer.appendChild(img);
 
         const contentDiv = document.createElement('div');

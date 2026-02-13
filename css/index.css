@@ -174,13 +174,19 @@
 
 .visit-btn {
     border-radius: 12px;
-    padding: 0.7rem 1.5rem;
-    font-size: 0.85rem;
-    background: var(--text-dark);
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    transition: var(--transition);
 }
 
 .visit-btn:hover {
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-dark), #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
 }
 
 /* Search Results Specific */
