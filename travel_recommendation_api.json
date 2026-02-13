@@ -69,12 +69,6 @@
       "description": "An ivory-white marble mausoleum on the right bank of the river Yamuna."
     },
     {
-        "id": 3,
-        "name": "Wat Phra Kaew, Thailand",
-        "imageUrl": "https://images.unsplash.com/photo-1528181304800-2f140819898c?auto=format&fit=crop&w=1000&q=80",
-        "description": "The most sacred Buddhist temple in Thailand, home to the Emerald Buddha."
-    },
-    {
         "id": 4,
         "name": "Kinkaku-ji, Japan",
         "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1000&q=80",
