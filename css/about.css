@@ -1,0 +1,97 @@
+/* About Us Layout Update */
+.about-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Team Section Premium Look */
+.team-section {
+    margin-top: 6rem;
+    padding: 4rem 1rem;
+    background-color: var(--background-color);
+    border-radius: 40px;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: var(--text-dark);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.team-member {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.team-member h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.team-member .role {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.team-member p:last-child {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Explore the World</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <meta name="description" content="Discover your next adventure with TravelBloom. Find the best travel recommendations based on your preferences.">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-globe-americas"></i> TravelBloom</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="search-container">
+                <i class="fas fa-search" style="color: #666;"></i>
+                <input type="text" id="searchInput" placeholder="Search (beach, temple, country)...">
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn" title="Clear Search"><i class="fas fa-times-circle"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Epxlore. Discover. Bloom.</span>
+                <h1>Discover Your Next <br><span>Great Adventure</span></h1>
+                <p>Unlock personalized travel recommendations curated just for you. From serene beaches to ancient wonders, the world is yours to explore.</p>
+                <div class="hero-buttons">
+                    <a href="#recommendations" class="cta-btn">Start Exploring</a>
+                    <a href="about.html" class="cta-btn secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section id="popular" class="popular-section">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Most loved spots by our community</p>
+            </div>
+            <div id="popularContainer" class="recommendations-container">
+                <!-- Popular results will be inserted here on load -->
+            </div>
+        </section>
+
+        <section id="recommendations" class="recommendations-section">
+            <div id="resultsHeader" class="section-header" style="display: none;">
+                <h2>Search Results</h2>
+                <p>Recommendations based on your interest</p>
+            </div>
+            <div id="recommendationsContainer" class="recommendations-container">
+                <!-- Search results will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">TravelBloom</div>
+            <p>&copy; 2024 TravelBloom. Crafted with passion for travelers.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/travel_recommendation.js"></script>
+</body>
+</html>
